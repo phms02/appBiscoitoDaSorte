@@ -1,0 +1,14 @@
+1º) Criar estrutura base;
+    -> Imports;
+    -> Função principal (function App());
+    -> (opcional) Fazer teste básico, na View principal, para verificar se está mostrando na tela.
+2º) Fazer estilização da função principal (function App());
+3º) Colocar a imagem do biscoito fechado e aplicar a respectiva estilização;
+    -> Como a imagem será dinâmica - uma vez que irá alternar entre o biscoito aberto e o biscoito fechado -, colocamos o require da imagem em um 'useSate'.
+4º) Criar o botão (TouchableOpacity), aplicar a respectiva estilização e fazer este botão acionar uma função quando o usuário clicar nele;
+5º) Tornar as frases dinâmicas, uma vez que irão mudar a cada vez que o usuário abrir o biscoito;
+6ª) Criar o array de frases;
+7º) Criar função de quebrar o biscoito;
+    -> Nela, criaremos uma variável que irá armazenar um número aleatório - este número aleatório corresponde ao número (index) da frase - e colocaremos a foto do biscoito aberto no lugar do biscoito fechado.
+8º) Criar função de quebrar o biscoito;
+    -> Nela, limpamos a frase e mudamos o biscoito aberto para o biscoito fechado.
