@@ -2,7 +2,7 @@ import React, { useState } from "react"
 import { View, Text, StyleSheet, Image, TouchableOpacity } from "react-native"
 
 export default function App() {
-  const [img, setImg] = useState(require('./src/biscoito_fechado.png'))
+  const [img, setImg] = useState(require("./src/biscoito_fechado.png"))
   const [frase, setFrase] = useState("")
   const [disabled, setDisabled] = useState(false)
 
@@ -32,7 +32,7 @@ export default function App() {
     setFrase('"' + frases[numeroAleatorio] + '"')
 
     // Mudando o biscoito fechado para o biscoito aberto...
-    setImg(require('./src/biscoito_aberto.png'))
+    setImg(require("./src/biscoito_aberto.png"))
 
     setDisabled(true)
   }
@@ -42,33 +42,51 @@ export default function App() {
     setFrase("")
 
     // Mudando o biscoito aberto para o biscoito fechado...
-    setImg(require('./src/biscoito_fechado.png'))
+    setImg(require("./src/biscoito_fechado.png"))
 
     setDisabled(false)
   }
 
   return (
-    <View style={ styles.container }>
+    <View style={styles.container}>
       <Image
-        source={ img }
-        style={ styles.img }
+        source={img}
+        style={styles.img}
       />
 
-      <Text style={ styles.textoFrase }>
+      <Text style={styles.textoFrase}>
         {frase}
       </Text>
 
-      <TouchableOpacity style={ styles.botao } onPress={ quebrarBiscoito } disabled={ disabled } >
-        <View style={ styles.btnArea }>
-          <Text style={ styles.btnTexto }>
+      <TouchableOpacity
+        style={styles.botao}
+        onPress={quebrarBiscoito}
+        disabled={disabled}
+      >
+        <View style={styles.btnArea}>
+          <Text style={styles.btnTexto}>
             Quebrar biscoito
           </Text>
         </View>
       </TouchableOpacity>
 
-      <TouchableOpacity style={[ styles.botao, { marginTop: 15, borderColor: '121212' }]} onPress={reiniciarBiscoito}>
-        <View style={ styles.btnArea }>
-          <Text style={[ styles.btnTexto, { color: '121212' }]}>
+      <TouchableOpacity
+        style={[
+          styles.botao,
+          {
+            marginTop: 15, borderColor: '121212'
+          }
+        ]}
+        onPress={reiniciarBiscoito}
+        >
+        <View style={styles.btnArea}>
+          <Text style={[
+            styles.btnTexto,
+            {
+              color: '121212'
+            }
+          ]}
+          >
             Quero abrir outro biscoito
           </Text>
         </View>
@@ -109,7 +127,7 @@ const styles = StyleSheet.create({
   btnArea:{
     flex: 1,  // A View do botão tentará ocupar todo o espaço disponível dentro do botão.
     justifyContent: "center",  // Centralizando VERTICALMENTE, ou seja, na COLUNA.
-    alignItems: "center"  // Centralizando VERTICALMENTE, ou seja, na LINHA.
+    alignItems: "center"  // Centralizando HORIZONTALMENTE, ou seja, na LINHA.
   },
 
   btnTexto:{
