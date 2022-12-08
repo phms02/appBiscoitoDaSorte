@@ -1,7 +1,7 @@
 # Aplicativo de Biscoito da Sorte
 
 ## Descrição do projeto:
-O objetivo deste projeto foi desenvolver um <b>aplicativo de biscoito da sorte</b>, no qual há dois botões: um para <b>quebrar o biscoito</b> e outro para <b>pedir outro biscoito</b.
+O objetivo deste projeto foi desenvolver um <b>aplicativo de biscoito da sorte</b>, no qual há dois botões: um para <b>quebrar o biscoito</b> e outro para <b>pedir outro biscoito</b>.
 
 Ao clicar em "Quebrar biscoito", a imagem do biscoito inteiro será substituída por uma imagem de biscoito quebrado, ao mesmo tempo que, embaixo da imagem do biscoito quebrado, aprece uma frase sorteada entre 15 frases.
 
