@@ -8,7 +8,7 @@ Ao clicar em "Quebrar biscoito", a imagem do biscoito inteiro será substituída
 Neste projeto, o objetivo não foi trabalhar com a responsividade.
 
 ## Tecnologias utilizadas:
-HTML, CSS e JavaScript, React e React Native.
+JavaScript, React e React Native.
 
 ## Conhecimentos adquirdos durante o desenvolvimento:
 Aprendi a tarabalhar melhor com os <b>useStates</b> do React; aprendi a trabalhar com botões, ativando e desativando um botão em função do outro.
